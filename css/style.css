@@ -51,3 +51,46 @@ body {
   padding: 10px 24px;
   display: block;
 }
+
+.btn {
+  background-color: #d7b399;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 20px;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+.main-item {
+  flex: 0 0 50%;
+}
+.main .sale-discription {
+  font-size: 30px;
+}
+.main .sale-title {
+  font-size: 55px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.box {
+  position: relative;
+}
+.box-prise {
+  position: absolute;
+  right: 0;
+  text-align: right;
+}
+.box-prise-old {
+  font-size: 24px;
+  font-weight: 700;
+}
+.box-prise-new {
+  font-size: 24px;
+  font-weight: 700;
+  color: #d84033;
+}

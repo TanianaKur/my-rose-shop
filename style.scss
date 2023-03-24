@@ -55,3 +55,45 @@ body {
     display: block;
   }
 }
+.btn {
+  background-color: $accent;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 20px;
+}
+.main {
+  display: flex;
+  justify-content: space-between;
+  &-item {
+    flex: 0 0 50%;
+  }
+  .sale {
+    &-discription {
+      font-size: 30px;
+    }
+    &-title {
+      font-size: 55px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+}
+.box {
+  position: relative;
+  &-prise {
+    position: absolute;
+    right: 0;
+    text-align: right;
+    &-old {
+      font-size: 24px;
+      font-weight: 700;
+    }
+    &-new {
+      font-size: 24px;
+      font-weight: 700;
+      color: $important;
+    }
+  }
+}
