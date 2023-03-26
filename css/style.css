@@ -1,9 +1,17 @@
+@charset "UTF-8";
 body {
   font-family: "Montserrat", sans-serif;
 }
 
+.page {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
 .page-light {
   background-color: #f9f6f1;
+}
+.page-dark {
+  background-color: #212121;
 }
 
 .wrapper {
@@ -15,6 +23,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 46px;
+  padding-bottom: 26px;
 }
 
 .nav {
@@ -58,7 +68,10 @@ body {
   font-size: 16px;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 15px 20px;
+  padding: 18px 28px;
+}
+.btn-xs {
+  padding: 8px 28px;
 }
 
 .main {
@@ -70,27 +83,83 @@ body {
 }
 .main .sale-discription {
   font-size: 30px;
+  letter-spacing: -0.6px;
 }
 .main .sale-title {
   font-size: 55px;
   font-weight: 700;
   text-transform: uppercase;
+  margin-top: 30px;
+  margin-bottom: 60px;
 }
-
-.box {
+.main .box {
   position: relative;
 }
-.box-prise {
+.main .box-prise {
   position: absolute;
   right: 0;
   text-align: right;
+  top: 35px;
 }
-.box-prise-old {
+.main .box-prise-old {
   font-size: 24px;
   font-weight: 700;
 }
-.box-prise-new {
+.main .box-prise-new {
   font-size: 24px;
   font-weight: 700;
   color: #d84033;
+  margin-top: 17px;
+}
+.main .box-image {
+  width: 456px;
+  height: 281px;
+}
+
+.notise {
+  text-align: center;
+  color: #fff;
+  padding: 50px 0;
+}
+.notise-title {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.notise-title span {
+  font-weight: 700;
+}
+
+.arrow {
+  width: 25px;
+  height: 20px;
+}
+
+.variety {
+  display: flex;
+  justify-content: space-between;
+}
+.variety-item {
+  flex: 0 0 33.3%;
+  padding: 50px 0;
+  background-repeat: no-repeat;
+  background-position: calc(100% - 50px) bottom;
+  background-size: 150px 131px;
+}
+.variety-hybrid {
+  background-image: url(../img/чг\ куст.jpg);
+}
+.variety-mini {
+  background-image: url(../img/mini.jpg);
+}
+.variety-wattled {
+  background-image: url(../img/плетистая.jpg);
+}
+.variety-title {
+  font-size: 24px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.variety-discription {
+  font-size: 16px;
+  margin-bottom: 30px;
 }

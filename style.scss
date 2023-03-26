@@ -8,8 +8,15 @@ $important: #d84033;
 body {
   font-family: "Montserrat", sans-serif;
 }
-.page-light {
-  background-color: $light;
+.page {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  &-light {
+    background-color: $light;
+  }
+  &-dark {
+    background-color: $dark;
+  }
 }
 .wrapper {
   max-width: 1110px;
@@ -19,6 +26,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 46px;
+  padding-bottom: 26px;
 }
 
 .nav {
@@ -61,7 +70,10 @@ body {
   font-size: 16px;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 15px 20px;
+  padding: 18px 28px;
+  &-xs {
+    padding: 8px 28px;
+  }
 }
 .main {
   display: flex;
@@ -72,28 +84,83 @@ body {
   .sale {
     &-discription {
       font-size: 30px;
+      letter-spacing: -0.6px;
     }
     &-title {
       font-size: 55px;
       font-weight: 700;
       text-transform: uppercase;
+      margin-top: 30px;
+      margin-bottom: 60px;
+    }
+  }
+  .box {
+    position: relative;
+    &-prise {
+      position: absolute;
+      right: 0;
+      text-align: right;
+      top: 35px;
+      &-old {
+        font-size: 24px;
+        font-weight: 700;
+      }
+      &-new {
+        font-size: 24px;
+        font-weight: 700;
+        color: $important;
+        margin-top: 17px;
+      }
+    }
+    &-image {
+      width: 456px;
+      height: 281px;
     }
   }
 }
-.box {
-  position: relative;
-  &-prise {
-    position: absolute;
-    right: 0;
-    text-align: right;
-    &-old {
-      font-size: 24px;
+.notise {
+  text-align: center;
+  color: #fff;
+  padding: 50px 0;
+  &-title {
+    font-size: 30px;
+    text-transform: uppercase;
+    span {
       font-weight: 700;
     }
-    &-new {
-      font-size: 24px;
-      font-weight: 700;
-      color: $important;
-    }
+  }
+}
+.arrow {
+  width: 25px;
+  height: 20px;
+}
+.variety {
+  display: flex;
+  justify-content: space-between;
+
+  &-item {
+    flex: 0 0 33.3%;
+    padding: 50px 0;
+    background-repeat: no-repeat;
+    background-position: calc(100% - 50px) bottom;
+    background-size: 150px 131px;
+  }
+  &-hybrid {
+    background-image: url(../img/чг\ куст.jpg);
+  }
+  &-mini {
+    background-image: url(../img/mini.jpg);
+  }
+  &-wattled {
+    background-image: url(../img/плетистая.jpg);
+  }
+  &-title {
+    font-size: 24px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  &-discription {
+    font-size: 16px;
+    margin-bottom: 30px;
   }
 }
