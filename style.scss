@@ -64,6 +64,10 @@ body {
     display: block;
   }
 }
+.title-h2 {
+  text-align: center;
+  font-size: 36px;
+}
 .btn {
   background-color: $accent;
   color: #fff;
@@ -73,6 +77,12 @@ body {
   padding: 18px 28px;
   &-xs {
     padding: 8px 28px;
+  }
+  &-center {
+    display: block;
+    text-align: center;
+    max-width: 200px;
+    margin: 0 auto;
   }
 }
 .main {
@@ -162,5 +172,24 @@ body {
   &-discription {
     font-size: 16px;
     margin-bottom: 30px;
+  }
+}
+.img-product {
+  height: 211px;
+  width: 205px;
+}
+.product {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  &-title {
+    font-weight: 600;
+  }
+  &-price {
+    color: $accent;
+    font-size: 18px;
+    font-weight: 700;
   }
 }

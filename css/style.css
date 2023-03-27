@@ -62,6 +62,11 @@ body {
   display: block;
 }
 
+.title-h2 {
+  text-align: center;
+  font-size: 36px;
+}
+
 .btn {
   background-color: #d7b399;
   color: #fff;
@@ -72,6 +77,12 @@ body {
 }
 .btn-xs {
   padding: 8px 28px;
+}
+.btn-center {
+  display: block;
+  text-align: center;
+  max-width: 200px;
+  margin: 0 auto;
 }
 
 .main {
@@ -162,4 +173,25 @@ body {
 .variety-discription {
   font-size: 16px;
   margin-bottom: 30px;
+}
+
+.img-product {
+  height: 211px;
+  width: 205px;
+}
+
+.product {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.product-title {
+  font-weight: 600;
+}
+.product-price {
+  color: #d7b399;
+  font-size: 18px;
+  font-weight: 700;
 }
