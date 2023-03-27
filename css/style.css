@@ -148,6 +148,7 @@ body {
 .arrow {
   width: 25px;
   height: 20px;
+  padding-top: 10px;
 }
 
 .variety {
