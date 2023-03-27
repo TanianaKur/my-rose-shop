@@ -1,0 +1,37 @@
+$accent: #d7b399;
+$dark: #212121;
+$light: #f9f6f1;
+$gray: #cbcfd4;
+$light-gray: #f4f4f4;
+$dark-gray: #8d8d8d;
+$important: #d84033;
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+  &-logo {
+    flex: 0 0 40%;
+  }
+  &-nav {
+    flex: 0 0 60%;
+    display: flex;
+    justify-content: space-between;
+    color: $light;
+  }
+  &-list {
+    list-style-type: none;
+    padding-left: 0;
+    &-title {
+      font-size: 10px;
+      font-weight: 700;
+    }
+    &-item {
+      margin-bottom: 10px;
+    }
+    &-link {
+      color: $gray;
+      text-decoration: none;
+      font-size: 14px;
+    }
+  }
+}
