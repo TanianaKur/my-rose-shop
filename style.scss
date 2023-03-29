@@ -1,10 +1,5 @@
-$accent: #d7b399;
-$dark: #671111;
-$light: #f9f6f1;
-$gray: #cbcfd4;
-$light-gray: #f4f4f4;
-$dark-gray: #8d8d8d;
-$important: #d84033;
+@import'variables';
+
 body {
   font-family: "Montserrat", sans-serif;
 }
@@ -28,7 +23,6 @@ body {
   align-items: center;
   padding-top: 46px;
   padding-bottom: 26px;
-}
 
 .nav {
   display: flex;
@@ -41,13 +35,19 @@ body {
     color: black;
     text-decoration: none;
   }
+  &-info {
+    .nav-item {
+      margin-left: 25px;
+      margin-right: 25px;
+    }
+  }
 }
 .cart {
   background-image: url(../img/shape_1_15.png);
   padding-left: 45px;
   margin-left: 20px;
   display: block;
-  width: 30px;
+
   height: 30px;
 
   background-repeat: no-repeat;
@@ -124,7 +124,8 @@ body {
       }
     }
     &-image {
-      width: 456px;
+      width: 100%;
+      max-width: 456px;
       height: 281px;
     }
   }
@@ -153,6 +154,7 @@ body {
 .variety {
   display: flex;
   justify-content: space-between;
+  padding-top: 50px;
 
   &-item {
     flex: 0 0 33.3%;
@@ -163,12 +165,15 @@ body {
   }
   &-hybrid {
     background-image: url(../img/чг\ куст.jpg);
+    margin-bottom: 15px;
   }
   &-mini {
     background-image: url(../img/mini.jpg);
+    margin-bottom: 15px;
   }
   &-wattled {
     background-image: url(../img/плетистая.jpg);
+    margin-bottom: 15px;
   }
   &-title {
     font-size: 24px;
