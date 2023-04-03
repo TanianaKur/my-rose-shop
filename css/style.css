@@ -26,25 +26,23 @@ body {
   padding-top: 46px;
   padding-bottom: 26px;
 }
-
-.nav {
+.header .nav {
   display: flex;
   list-style-type: none;
   padding-left: 0;
 }
-.nav-item {
+.header .nav-item {
   margin-left: 52px;
 }
-.nav-link {
+.header .nav-link {
   color: black;
   text-decoration: none;
 }
-.nav-info .nav-item {
+.header .nav-info .nav-item {
   margin-left: 25px;
   margin-right: 25px;
 }
-
-.cart {
+.header .cart {
   background-image: url(../img/shape_1_15.png);
   padding-left: 45px;
   margin-left: 20px;
@@ -53,7 +51,7 @@ body {
   background-repeat: no-repeat;
   background-position: 0 center;
 }
-.cart-count {
+.header .cart-count {
   background-image: url(../img/white-arrow-22.png);
   background-repeat: no-repeat;
   background-position: 0 center;
@@ -93,8 +91,107 @@ body {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 992px) {
+  .main {
+    flex-wrap: wrap;
+  }
+}
+@elese if $point == md {
+  @media (max-width: 768px) {
+    .main {
+      flex-wrap: wrap;
+    }
+  }
+}
+@elese if $point == sm {
+  @media (max-width: 576px) {
+    .main {
+      flex-wrap: wrap;
+    }
+  }
+}
+@elese if $point == xs {
+  @media (max-width: 320px) {
+    .main {
+      flex-wrap: wrap;
+    }
+  }
+}
+@elese if $point == minlg {
+  @media (min-width: 993px) {
+    .main {
+      flex-wrap: wrap;
+    }
+  }
+}
 .main-item {
   flex: 0 0 50%;
+}
+@media (max-width: 992px) {
+  .main-item {
+    flex: 0 0 100%;
+  }
+}
+@elese if $point == md {
+  @media (max-width: 768px) {
+    .main-item {
+      flex: 0 0 100%;
+    }
+  }
+}
+@elese if $point == sm {
+  @media (max-width: 576px) {
+    .main-item {
+      flex: 0 0 100%;
+    }
+  }
+}
+@elese if $point == xs {
+  @media (max-width: 320px) {
+    .main-item {
+      flex: 0 0 100%;
+    }
+  }
+}
+@elese if $point == minlg {
+  @media (min-width: 993px) {
+    .main-item {
+      flex: 0 0 100%;
+    }
+  }
+}
+@media (max-width: 992px) {
+  .main .sale {
+    text-align: center;
+  }
+}
+@elese if $point == md {
+  @media (max-width: 768px) {
+    .main .sale {
+      text-align: center;
+    }
+  }
+}
+@elese if $point == sm {
+  @media (max-width: 576px) {
+    .main .sale {
+      text-align: center;
+    }
+  }
+}
+@elese if $point == xs {
+  @media (max-width: 320px) {
+    .main .sale {
+      text-align: center;
+    }
+  }
+}
+@elese if $point == minlg {
+  @media (min-width: 993px) {
+    .main .sale {
+      text-align: center;
+    }
+  }
 }
 .main .sale-discription {
   font-size: 30px;
@@ -117,6 +214,7 @@ body {
   top: 35px;
 }
 .main .box-prise-old {
+  color: #cbcfd4;
   font-size: 24px;
   font-weight: 700;
 }
@@ -130,6 +228,44 @@ body {
   width: 100%;
   max-width: 456px;
   height: 281px;
+}
+@media (max-width: 992px) {
+  .main .box-image {
+    min-width: 200px;
+    margin: 50px auto 20px;
+  }
+}
+@elese if $point == md {
+  @media (max-width: 768px) {
+    .main .box-image {
+      min-width: 200px;
+      margin: 50px auto 20px;
+    }
+  }
+}
+@elese if $point == sm {
+  @media (max-width: 576px) {
+    .main .box-image {
+      min-width: 200px;
+      margin: 50px auto 20px;
+    }
+  }
+}
+@elese if $point == xs {
+  @media (max-width: 320px) {
+    .main .box-image {
+      min-width: 200px;
+      margin: 50px auto 20px;
+    }
+  }
+}
+@elese if $point == minlg {
+  @media (min-width: 993px) {
+    .main .box-image {
+      min-width: 200px;
+      margin: 50px auto 20px;
+    }
+  }
 }
 
 .notise {
@@ -160,12 +296,78 @@ body {
   justify-content: space-between;
   padding-top: 50px;
 }
+@media (max-width: 992px) {
+  .variety {
+    flex-wrap: wrap;
+  }
+}
+@elese if $point == md {
+  @media (max-width: 768px) {
+    .variety {
+      flex-wrap: wrap;
+    }
+  }
+}
+@elese if $point == sm {
+  @media (max-width: 576px) {
+    .variety {
+      flex-wrap: wrap;
+    }
+  }
+}
+@elese if $point == xs {
+  @media (max-width: 320px) {
+    .variety {
+      flex-wrap: wrap;
+    }
+  }
+}
+@elese if $point == minlg {
+  @media (min-width: 993px) {
+    .variety {
+      flex-wrap: wrap;
+    }
+  }
+}
 .variety-item {
   flex: 0 0 33.3%;
   padding: 50px 0;
   background-repeat: no-repeat;
   background-position: calc(100% - 50px) bottom;
   background-size: 150px 131px;
+}
+@media (max-width: 992px) {
+  .variety-item {
+    flex: 0 0 100%;
+  }
+}
+@elese if $point == md {
+  @media (max-width: 768px) {
+    .variety-item {
+      flex: 0 0 100%;
+    }
+  }
+}
+@elese if $point == sm {
+  @media (max-width: 576px) {
+    .variety-item {
+      flex: 0 0 100%;
+    }
+  }
+}
+@elese if $point == xs {
+  @media (max-width: 320px) {
+    .variety-item {
+      flex: 0 0 100%;
+    }
+  }
+}
+@elese if $point == minlg {
+  @media (min-width: 993px) {
+    .variety-item {
+      flex: 0 0 100%;
+    }
+  }
 }
 .variety-hybrid {
   background-image: url(../img/чг\ куст.jpg);
@@ -200,6 +402,81 @@ body {
   text-align: center;
   margin-top: 30px;
   margin-bottom: 30px;
+}
+@media (max-width: 992px) {
+  .product {
+    flex-wrap: wrap;
+  }
+}
+@elese if $point == md {
+  @media (max-width: 768px) {
+    .product {
+      flex-wrap: wrap;
+    }
+  }
+}
+@elese if $point == sm {
+  @media (max-width: 576px) {
+    .product {
+      flex-wrap: wrap;
+    }
+  }
+}
+@elese if $point == xs {
+  @media (max-width: 320px) {
+    .product {
+      flex-wrap: wrap;
+    }
+  }
+}
+@elese if $point == minlg {
+  @media (min-width: 993px) {
+    .product {
+      flex-wrap: wrap;
+    }
+  }
+}
+.product-item {
+  flex: 0 0 24%;
+  position: relative;
+}
+@media (max-width: 992px) {
+  .product-item {
+    flex: 0 0 49%;
+    margin-bottom: 20px;
+  }
+}
+@elese if $point == md {
+  @media (max-width: 768px) {
+    .product-item {
+      flex: 0 0 49%;
+      margin-bottom: 20px;
+    }
+  }
+}
+@elese if $point == sm {
+  @media (max-width: 576px) {
+    .product-item {
+      flex: 0 0 49%;
+      margin-bottom: 20px;
+    }
+  }
+}
+@elese if $point == xs {
+  @media (max-width: 320px) {
+    .product-item {
+      flex: 0 0 49%;
+      margin-bottom: 20px;
+    }
+  }
+}
+@elese if $point == minlg {
+  @media (min-width: 993px) {
+    .product-item {
+      flex: 0 0 49%;
+      margin-bottom: 20px;
+    }
+  }
 }
 .product-title {
   font-weight: 600;
