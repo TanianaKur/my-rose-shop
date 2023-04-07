@@ -24,11 +24,19 @@ body {
   align-items: center;
   padding-top: 46px;
   padding-bottom: 26px;
-
+  nav {
+    @include breakpoint(lg) {
+      display: none;
+    }
+  }
   .nav {
     display: flex;
     list-style-type: none;
     padding-left: 0;
+    font-size: 14px;
+    @include breakpoint(lg) {
+      display: none;
+    }
 
     &-item {
       margin-left: 52px;
@@ -53,14 +61,17 @@ body {
     height: 30px;
 
     background-repeat: no-repeat;
-    background-position: 0 center;
+    background-position: 0, center;
     &-count {
-      background-image: url(../img/white-arrow-22.png);
+      background-color: $accent;
+      background-image: url(../img/white-arrow-4.png);
       background-repeat: no-repeat;
       background-position: 0 center;
-      background-color: $accent;
-      color: #fff;
-      font-size: 12px;
+      border-radius: 5px;
+      margin-right: 2px;
+
+      color: $dark;
+      font-size: 10px;
       font-weight: 700px;
       padding: 10px 24px;
       display: block;
