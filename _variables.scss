@@ -10,23 +10,19 @@ $important: #d84033;
     @media (max-width: 992px) {
       @content;
     }
-  }
-  @elese if $point == md {
+  } @else if $point == md {
     @media (max-width: 768px) {
       @content;
     }
-  }
-  @elese if $point == sm {
+  } @else if $point == sm {
     @media (max-width: 576px) {
       @content;
     }
-  }
-  @elese if $point == xs {
-    @media (max-width: 320px) {
+  } @else if $point == xs {
+    @media (max-width: 500px) {
       @content;
     }
-  }
-  @elese if $point == minlg {
+  } @else if $point == minlg {
     @media (min-width: 993px) {
       @content;
     }

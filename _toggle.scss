@@ -35,6 +35,10 @@
   @include breakpoint(minlg) {
     display: none;
   }
+  @include breakpoint(xs) {
+    width: 18px;
+    height: 18px;
+  }
 }
 
 .line {

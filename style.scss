@@ -7,6 +7,10 @@ body {
 .page {
   padding-top: 100px;
   padding-bottom: 100px;
+  @include breakpoint(sm) {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
   &-light {
     background-color: $light;
   }
@@ -24,6 +28,11 @@ body {
   align-items: center;
   padding-top: 46px;
   padding-bottom: 26px;
+  &-logo {
+    @include breakpoint(xs) {
+      min-width: 130px;
+    }
+  }
   nav {
     @include breakpoint(lg) {
       display: none;
@@ -64,14 +73,14 @@ body {
     background-position: 0, center;
     &-count {
       background-color: $accent;
-      background-image: url(../img/white-arrow-4.png);
+      //background-image: url(../img/white-arrow-4.png);
       background-repeat: no-repeat;
       background-position: 0 center;
       border-radius: 5px;
       margin-right: 2px;
 
       color: $dark;
-      font-size: 10px;
+      font-size: 15px;
       font-weight: 700px;
       padding: 10px 24px;
       display: block;
@@ -83,6 +92,9 @@ body {
   text-align: center;
   font-size: 36px;
   text-transform: uppercase;
+  @include breakpoint(xs) {
+    font-size: 28px;
+  }
 }
 .btn {
   background-color: $accent;
@@ -120,6 +132,9 @@ body {
     &-discription {
       font-size: 30px;
       letter-spacing: -0.6px;
+      @include breakpoint(sm) {
+        font-size: 20px;
+      }
     }
     &-title {
       font-size: 55px;
@@ -127,9 +142,21 @@ body {
       text-transform: uppercase;
       margin-top: 30px;
       margin-bottom: 60px;
+      @include breakpoint(sm) {
+        font-size: 28px;
+        margin-top: 10px;
+        margin-bottom: 45px;
+      }
     }
   }
   .box {
+    @include breakpoint(lg) {
+      max-width: 600px;
+      margin: 50px auto 0;
+    }
+    @include breakpoint(sm) {
+      max-width: 350px;
+    }
     position: relative;
 
     &-prise {
@@ -141,12 +168,19 @@ body {
         color: $gray;
         font-size: 24px;
         font-weight: 700;
+        @include breakpoint(sm) {
+          font-size: 14px;
+        }
       }
       &-new {
         font-size: 24px;
         font-weight: 700;
         color: $important;
         margin-top: 17px;
+        @include breakpoint(sm) {
+          font-size: 22px;
+          margin-top: 4px;
+        }
       }
     }
     &-image {
@@ -164,12 +198,22 @@ body {
   text-align: center;
   color: #fff;
   padding: 64px 0 54px;
+  @include breakpoint(sm) {
+    padding: 40px 0 42px;
+  }
   &-title {
     font-size: 30px;
     text-transform: uppercase;
     font-weight: 400;
+    @include breakpoint(sm) {
+      font-size: 18px;
+      line-height: 1.5;
+    }
     span {
       font-weight: 700;
+      @include breakpoint(xs) {
+        display: block;
+      }
     }
     &-discription {
       font-size: 21px;
@@ -198,6 +242,12 @@ body {
     @include breakpoint(lg) {
       flex: 0 0 100%;
     }
+    @include breakpoint(xs) {
+      padding: 27px 0 84px;
+      background-size: 153px 130px;
+
+      background-position: 100% bottom;
+    }
   }
   &-hybrid {
     background-image: url(../img/чг\ куст.jpg);
@@ -215,6 +265,9 @@ body {
     font-size: 24px;
     font-weight: 300;
     text-transform: uppercase;
+    @include breakpoint(xs) {
+      font-size: 18px;
+    }
   }
   &-discription {
     font-size: 16px;
@@ -229,10 +282,13 @@ body {
   display: flex;
   justify-content: space-between;
   text-align: center;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 100px;
+  margin-bottom: 100px;
   @include breakpoint(lg) {
     flex-wrap: wrap;
+  }
+  @include breakpoint(xs) {
+    margin-bottom: 50px;
   }
   &-item {
     flex: 0 0 24%;
@@ -240,6 +296,9 @@ body {
     @include breakpoint(lg) {
       flex: 0 0 49%;
       margin-bottom: 20px;
+    }
+    @include breakpoint(xs) {
+      flex: 0 0 100%;
     }
   }
   &-title {

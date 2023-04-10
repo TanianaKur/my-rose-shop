@@ -32,32 +32,15 @@
   padding: 7px 12px;
   cursor: pointer;
 }
-@elese if $point == md {
-  @media (max-width: 768px) {
-    .toggle-menu {
-      display: none;
-    }
+@media (min-width: 993px) {
+  .toggle-menu {
+    display: none;
   }
 }
-@elese if $point == sm {
-  @media (max-width: 576px) {
-    .toggle-menu {
-      display: none;
-    }
-  }
-}
-@elese if $point == xs {
-  @media (max-width: 320px) {
-    .toggle-menu {
-      display: none;
-    }
-  }
-}
-@elese if $point == minlg {
-  @media (min-width: 993px) {
-    .toggle-menu {
-      display: none;
-    }
+@media (max-width: 500px) {
+  .toggle-menu {
+    width: 18px;
+    height: 18px;
   }
 }
 
@@ -131,6 +114,12 @@ body {
   padding-top: 100px;
   padding-bottom: 100px;
 }
+@media (max-width: 576px) {
+  .page {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
 .page-light {
   background-color: #f9f6f1;
 }
@@ -150,37 +139,14 @@ body {
   padding-top: 46px;
   padding-bottom: 26px;
 }
+@media (max-width: 500px) {
+  .header-logo {
+    min-width: 130px;
+  }
+}
 @media (max-width: 992px) {
   .header nav {
     display: none;
-  }
-}
-@elese if $point == md {
-  @media (max-width: 768px) {
-    .header nav {
-      display: none;
-    }
-  }
-}
-@elese if $point == sm {
-  @media (max-width: 576px) {
-    .header nav {
-      display: none;
-    }
-  }
-}
-@elese if $point == xs {
-  @media (max-width: 320px) {
-    .header nav {
-      display: none;
-    }
-  }
-}
-@elese if $point == minlg {
-  @media (min-width: 993px) {
-    .header nav {
-      display: none;
-    }
   }
 }
 .header .nav {
@@ -192,34 +158,6 @@ body {
 @media (max-width: 992px) {
   .header .nav {
     display: none;
-  }
-}
-@elese if $point == md {
-  @media (max-width: 768px) {
-    .header .nav {
-      display: none;
-    }
-  }
-}
-@elese if $point == sm {
-  @media (max-width: 576px) {
-    .header .nav {
-      display: none;
-    }
-  }
-}
-@elese if $point == xs {
-  @media (max-width: 320px) {
-    .header .nav {
-      display: none;
-    }
-  }
-}
-@elese if $point == minlg {
-  @media (min-width: 993px) {
-    .header .nav {
-      display: none;
-    }
   }
 }
 .header .nav-item {
@@ -244,13 +182,12 @@ body {
 }
 .header .cart-count {
   background-color: #d7b399;
-  background-image: url(../img/white-arrow-4.png);
   background-repeat: no-repeat;
   background-position: 0 center;
   border-radius: 5px;
   margin-right: 2px;
   color: #671111;
-  font-size: 10px;
+  font-size: 15px;
   font-weight: 700px;
   padding: 10px 24px;
   display: block;
@@ -260,6 +197,11 @@ body {
   text-align: center;
   font-size: 36px;
   text-transform: uppercase;
+}
+@media (max-width: 500px) {
+  .title-h2 {
+    font-size: 28px;
+  }
 }
 
 .btn {
@@ -289,34 +231,6 @@ body {
     flex-wrap: wrap;
   }
 }
-@elese if $point == md {
-  @media (max-width: 768px) {
-    .main {
-      flex-wrap: wrap;
-    }
-  }
-}
-@elese if $point == sm {
-  @media (max-width: 576px) {
-    .main {
-      flex-wrap: wrap;
-    }
-  }
-}
-@elese if $point == xs {
-  @media (max-width: 320px) {
-    .main {
-      flex-wrap: wrap;
-    }
-  }
-}
-@elese if $point == minlg {
-  @media (min-width: 993px) {
-    .main {
-      flex-wrap: wrap;
-    }
-  }
-}
 .main-item {
   flex: 0 0 50%;
 }
@@ -325,70 +239,19 @@ body {
     flex: 0 0 100%;
   }
 }
-@elese if $point == md {
-  @media (max-width: 768px) {
-    .main-item {
-      flex: 0 0 100%;
-    }
-  }
-}
-@elese if $point == sm {
-  @media (max-width: 576px) {
-    .main-item {
-      flex: 0 0 100%;
-    }
-  }
-}
-@elese if $point == xs {
-  @media (max-width: 320px) {
-    .main-item {
-      flex: 0 0 100%;
-    }
-  }
-}
-@elese if $point == minlg {
-  @media (min-width: 993px) {
-    .main-item {
-      flex: 0 0 100%;
-    }
-  }
-}
 @media (max-width: 992px) {
   .main .sale {
     text-align: center;
   }
 }
-@elese if $point == md {
-  @media (max-width: 768px) {
-    .main .sale {
-      text-align: center;
-    }
-  }
-}
-@elese if $point == sm {
-  @media (max-width: 576px) {
-    .main .sale {
-      text-align: center;
-    }
-  }
-}
-@elese if $point == xs {
-  @media (max-width: 320px) {
-    .main .sale {
-      text-align: center;
-    }
-  }
-}
-@elese if $point == minlg {
-  @media (min-width: 993px) {
-    .main .sale {
-      text-align: center;
-    }
-  }
-}
 .main .sale-discription {
   font-size: 30px;
   letter-spacing: -0.6px;
+}
+@media (max-width: 576px) {
+  .main .sale-discription {
+    font-size: 20px;
+  }
 }
 .main .sale-title {
   font-size: 55px;
@@ -397,8 +260,26 @@ body {
   margin-top: 30px;
   margin-bottom: 60px;
 }
+@media (max-width: 576px) {
+  .main .sale-title {
+    font-size: 28px;
+    margin-top: 10px;
+    margin-bottom: 45px;
+  }
+}
 .main .box {
   position: relative;
+}
+@media (max-width: 992px) {
+  .main .box {
+    max-width: 600px;
+    margin: 50px auto 0;
+  }
+}
+@media (max-width: 576px) {
+  .main .box {
+    max-width: 350px;
+  }
 }
 .main .box-prise {
   position: absolute;
@@ -411,11 +292,22 @@ body {
   font-size: 24px;
   font-weight: 700;
 }
+@media (max-width: 576px) {
+  .main .box-prise-old {
+    font-size: 14px;
+  }
+}
 .main .box-prise-new {
   font-size: 24px;
   font-weight: 700;
   color: #d84033;
   margin-top: 17px;
+}
+@media (max-width: 576px) {
+  .main .box-prise-new {
+    font-size: 22px;
+    margin-top: 4px;
+  }
 }
 .main .box-image {
   width: 100%;
@@ -428,51 +320,35 @@ body {
     margin: 50px auto 20px;
   }
 }
-@elese if $point == md {
-  @media (max-width: 768px) {
-    .main .box-image {
-      min-width: 200px;
-      margin: 50px auto 20px;
-    }
-  }
-}
-@elese if $point == sm {
-  @media (max-width: 576px) {
-    .main .box-image {
-      min-width: 200px;
-      margin: 50px auto 20px;
-    }
-  }
-}
-@elese if $point == xs {
-  @media (max-width: 320px) {
-    .main .box-image {
-      min-width: 200px;
-      margin: 50px auto 20px;
-    }
-  }
-}
-@elese if $point == minlg {
-  @media (min-width: 993px) {
-    .main .box-image {
-      min-width: 200px;
-      margin: 50px auto 20px;
-    }
-  }
-}
 
 .notise {
   text-align: center;
   color: #fff;
   padding: 64px 0 54px;
 }
+@media (max-width: 576px) {
+  .notise {
+    padding: 40px 0 42px;
+  }
+}
 .notise-title {
   font-size: 30px;
   text-transform: uppercase;
   font-weight: 400;
 }
+@media (max-width: 576px) {
+  .notise-title {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+}
 .notise-title span {
   font-weight: 700;
+}
+@media (max-width: 500px) {
+  .notise-title span {
+    display: block;
+  }
 }
 .notise-title-discription {
   font-size: 21px;
@@ -494,34 +370,6 @@ body {
     flex-wrap: wrap;
   }
 }
-@elese if $point == md {
-  @media (max-width: 768px) {
-    .variety {
-      flex-wrap: wrap;
-    }
-  }
-}
-@elese if $point == sm {
-  @media (max-width: 576px) {
-    .variety {
-      flex-wrap: wrap;
-    }
-  }
-}
-@elese if $point == xs {
-  @media (max-width: 320px) {
-    .variety {
-      flex-wrap: wrap;
-    }
-  }
-}
-@elese if $point == minlg {
-  @media (min-width: 993px) {
-    .variety {
-      flex-wrap: wrap;
-    }
-  }
-}
 .variety-item {
   flex: 0 0 33.3%;
   padding: 50px 0;
@@ -534,32 +382,11 @@ body {
     flex: 0 0 100%;
   }
 }
-@elese if $point == md {
-  @media (max-width: 768px) {
-    .variety-item {
-      flex: 0 0 100%;
-    }
-  }
-}
-@elese if $point == sm {
-  @media (max-width: 576px) {
-    .variety-item {
-      flex: 0 0 100%;
-    }
-  }
-}
-@elese if $point == xs {
-  @media (max-width: 320px) {
-    .variety-item {
-      flex: 0 0 100%;
-    }
-  }
-}
-@elese if $point == minlg {
-  @media (min-width: 993px) {
-    .variety-item {
-      flex: 0 0 100%;
-    }
+@media (max-width: 500px) {
+  .variety-item {
+    padding: 27px 0 84px;
+    background-size: 153px 130px;
+    background-position: 100% bottom;
   }
 }
 .variety-hybrid {
@@ -579,6 +406,11 @@ body {
   font-weight: 300;
   text-transform: uppercase;
 }
+@media (max-width: 500px) {
+  .variety-title {
+    font-size: 18px;
+  }
+}
 .variety-discription {
   font-size: 16px;
   margin-bottom: 30px;
@@ -593,40 +425,17 @@ body {
   display: flex;
   justify-content: space-between;
   text-align: center;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 @media (max-width: 992px) {
   .product {
     flex-wrap: wrap;
   }
 }
-@elese if $point == md {
-  @media (max-width: 768px) {
-    .product {
-      flex-wrap: wrap;
-    }
-  }
-}
-@elese if $point == sm {
-  @media (max-width: 576px) {
-    .product {
-      flex-wrap: wrap;
-    }
-  }
-}
-@elese if $point == xs {
-  @media (max-width: 320px) {
-    .product {
-      flex-wrap: wrap;
-    }
-  }
-}
-@elese if $point == minlg {
-  @media (min-width: 993px) {
-    .product {
-      flex-wrap: wrap;
-    }
+@media (max-width: 500px) {
+  .product {
+    margin-bottom: 50px;
   }
 }
 .product-item {
@@ -639,36 +448,9 @@ body {
     margin-bottom: 20px;
   }
 }
-@elese if $point == md {
-  @media (max-width: 768px) {
-    .product-item {
-      flex: 0 0 49%;
-      margin-bottom: 20px;
-    }
-  }
-}
-@elese if $point == sm {
-  @media (max-width: 576px) {
-    .product-item {
-      flex: 0 0 49%;
-      margin-bottom: 20px;
-    }
-  }
-}
-@elese if $point == xs {
-  @media (max-width: 320px) {
-    .product-item {
-      flex: 0 0 49%;
-      margin-bottom: 20px;
-    }
-  }
-}
-@elese if $point == minlg {
-  @media (min-width: 993px) {
-    .product-item {
-      flex: 0 0 49%;
-      margin-bottom: 20px;
-    }
+@media (max-width: 500px) {
+  .product-item {
+    flex: 0 0 100%;
   }
 }
 .product-title {
