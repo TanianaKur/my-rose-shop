@@ -1,0 +1,171 @@
+.product-page-chain {
+  color: #29ac13;
+  font-size: 32px;
+  font-family: inter;
+  font-style: regular;
+  padding-left: 76px;
+}
+
+.product-page-img {
+  width: 487px;
+  height: 387px;
+}
+
+.chain-span {
+  color: red;
+}
+
+.product-page-name {
+  position: absolute;
+  color: #671111;
+  margin-left: 53px;
+  font-size: 32px;
+  font-family: inter;
+  font-style: bold;
+  padding-bottom: 100px;
+  float: top;
+}
+
+.price {
+  display: inline;
+  position: absolute;
+  margin-left: 50px;
+  margin-top: 70px;
+  font-size: 32px;
+  font-family: inter;
+  font-style: mixed;
+  color: #0a531a;
+}
+
+.new-price {
+  display: inline;
+  position: absolute;
+  margin-top: 70px;
+  font-size: 32px;
+  font-family: inter;
+  font-style: regular;
+  margin-left: 200px;
+}
+
+.old-price {
+  display: inline;
+  position: absolute;
+  font-size: 32px;
+  font-family: inter;
+  font-style: regular;
+  color: #da0f0f;
+  margin-top: 70px;
+  margin-left: 400px;
+  text-decoration: line-through;
+}
+
+.discount-product {
+  display: inline;
+  position: absolute;
+  font-size: 22px;
+  font-family: inter;
+  font-style: regular;
+  background-color: #671111;
+  color: #ffffff;
+  width: 153px;
+  height: 41px;
+  margin-top: 170px;
+  margin-left: 40px;
+  padding-top: 15px;
+  text-align: center;
+}
+
+.discount-valid {
+  display: inline;
+  position: absolute;
+  font-size: 20px;
+  font-family: inter;
+  font-style: italic;
+  margin-top: 190px;
+  margin-left: 300px;
+}
+
+.quantity {
+  display: inline;
+  position: absolute;
+  font-size: 32px;
+  font-family: inter;
+  font-style: italic;
+  margin-top: 300px;
+  margin-left: 40px;
+}
+
+.minus {
+  display: inline;
+  position: absolute;
+  margin-left: 261px;
+  margin-top: 300px;
+  font-size: 32px;
+  font-family: inter;
+  font-style: regular;
+}
+
+.plus {
+  display: inline;
+  position: absolute;
+  margin-left: 390px;
+  margin-top: 300px;
+  font-size: 32px;
+  font-family: inter;
+  font-style: regular;
+}
+
+.frame {
+  display: inline;
+  position: absolute;
+  margin-left: 300px;
+  margin-top: 300px;
+  font-size: 32px;
+  font-family: inter;
+  font-style: regular;
+  width: 60px;
+  height: 40px;
+  background-color: #e7c0c0;
+  text-align: center;
+}
+
+.in-basket {
+  position: absolute;
+  margin-left: 450px;
+  margin-top: 298px;
+  width: 200px;
+  height: 50px;
+  background-color: #671111;
+  color: aliceblue;
+  border-radius: 10px;
+  text-align: start;
+  font-size: 32px;
+  font-family: inter;
+  font-style: regular;
+  padding-left: 2px;
+}
+
+.arrow-bascet {
+  width: 29px;
+  height: 26px;
+  position: relative;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.records-velue {
+  font-size: 20px;
+  font-family: inter;
+  font-style: mixed;
+}
+
+.records-span {
+  font-weight: bold;
+  text-align: start;
+}
+
+.product-description {
+  font-size: 20px;
+  font-family: inter;
+  font-style: regular;
+}
