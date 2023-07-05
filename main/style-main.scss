@@ -1,9 +1,9 @@
 @import "variables";
 @import "toggle";
 
-body {
-  font-family: "Montserrat", sans-serif;
-}
+// body {
+//   font-family: "Montserrat", sans-serif;
+// }
 .page {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -18,10 +18,10 @@ body {
     background-color: $dark;
   }
 }
-.wrapper {
-  max-width: 1110px;
-  margin: 0 auto;
-}
+// .wrapper {
+//   max-width: 1110px;
+//   margin: 0 auto;
+// }
 
 .title-h2 {
   text-align: center;

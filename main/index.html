@@ -19,44 +19,11 @@
     <link rel="stylesheet" href="../css/style-main.css" />
     <link rel="stylesheet" href="../css/footer-style.css" />
     <link rel="stylesheet" href="../css/header-style.css" />
+    <link rel="stylesheet" href="../css/shared-style.css" />
   </head>
   <body>
-    <div class="page-light">
-      <div class="wrapper">
-        <header class="header">
-          <nav>
-            <ul class="nav nav-info">
-              <li class="nav-item">
-                <a class="nav-link" href="">чайно-гибридные</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="">плетистые</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="">миниатюрные</a>
-              </li>
-            </ul>
-          </nav>
-          <img
-            class="header-logo"
-            src="../img/logoza.ru-AmoyShare.png"
-            alt="logo"
-          />
-          <ul class="nav">
-            <li class="nav-item"><a class="nav-link" href="">Оплата</a></li>
-            <li class="nav-item"><a class="nav-link" href="">Доставка</a></li>
-          </ul>
-          <div class="cart">
-            <span class="cart-count">2</span>
-          </div>
-          <div class="toggle-menu">
-            <div class="line line1"></div>
-            <div class="line line2"></div>
-            <div class="line line3"></div>
-          </div>
-        </header>
-      </div>
-    </div>
+    <div id="header"></div>
+
     <div class="page page-light">
       <div class="wrapper">
         <div class="main">
@@ -151,99 +118,17 @@
         <a href="" class="btn btn-center"> <span>все сорта</span> </a>
       </div>
     </div>
-    <div class="page-dark">
-      <div class="wrapper">
-        <footer class="footer">
-          <div class="footer-logo">
-            <img src="../img/logoza.ru-AmoyShare.png" alt="logo" />
-          </div>
-          <div class="footer-nav">
-            <ul class="footer-list">
-              <li class="footer-list-item footer-list-title">
-                Основные ссылки
-              </li>
-              <li class="footer-list-item">
-                <a class="footer-list-link" href="">О компании</a>
-              </li>
-              <li class="footer-list-item">
-                <a class="footer-list-link" href="">Каталог</a>
-              </li>
-              <li class="footer-list-item">
-                <a class="footer-list-link" href="">Доставка</a>
-              </li>
-              <li class="footer-list-item">
-                <a class="footer-list-link" href="">Оплата</a>
-              </li>
-            </ul>
-            <ul class="footer-list">
-              <li class="footer-list-item footer-list-title">Категории</li>
-              <li class="footer-list-item">
-                <a class="footer-list-link" href="">Чайно-гибридные</a>
-              </li>
-              <li class="footer-list-item">
-                <a class="footer-list-link" href="">Плетистые</a>
-              </li>
-              <li class="footer-list-item">
-                <a class="footer-list-link" href="">Миниатюрные</a>
-              </li>
-              <li class="footer-list-item">
-                <a class="footer-list-link" href="">Парковые</a>
-              </li>
-            </ul>
-            <ul class="footer-list">
-              <li class="footer-list-item footer-list-title">
-                Полезные ссылки
-              </li>
-              <li class="footer-list-item">
-                <a class="footer-list-link" href="">Уход за розами</a>
-              </li>
-              <li class="footer-list-item">
-                <a class="footer-list-link" href="">Гарантия качества</a>
-              </li>
-              <li class="footer-list-item">
-                <a class="footer-list-link" href="">Дизайн сада</a>
-              </li>
-            </ul>
-            <ul class="footer-list">
-              <li class="footer-list-item footer-list-title">Соц сети</li>
-              <li class="footer-list-item">
-                <a class="footer-list-link" href="">Telegram</a>
-              </li>
-              <li class="footer-list-item">
-                <a class="footer-list-link" href="">В контакте</a>
-              </li>
-              <li class="footer-list-item">
-                <a class="footer-list-link" href="">Однокласники</a>
-              </li>
-            </ul>
-          </div>
-        </footer>
-      </div>
-    </div>
-    <div class="nav-bar">
-      <ul class="nav-list">
-        <li class="nav-list-item">
-          <a href="" class="nav-link">чайно-гибридные</a>
-        </li>
-        <li class="nav-list-item">
-          <a href="" class="nav-link">плетистые</a>
-        </li>
-        <li class="nav-list-item">
-          <a href="" class="nav-link">миниатюрные</a>
-        </li>
-        <li class="nav-list-item">
-          <a href="" class="nav-link">Оплата</a>
-        </li>
-        <li class="nav-list-item">
-          <a href="" class="nav-link">доставка</a>
-        </li>
-      </ul>
-    </div>
+
+    <div id="footer"></div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
     <script>
-      var toggleButton = document.querySelector(".toggle-menu");
-      var navBar = document.querySelector(".nav-bar");
-      toggleButton.addEventListener("click", function () {
-        navBar.classList.toggle("toggle");
+      $(function () {
+        $("#header").load("../header/header.html");
+        $("#footer").load("../footer/footer.html");
       });
     </script>
   </body>

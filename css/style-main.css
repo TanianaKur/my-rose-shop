@@ -106,10 +106,6 @@
   transform: scaleX(1);
 }
 
-body {
-  font-family: "Montserrat", sans-serif;
-}
-
 .page {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -125,11 +121,6 @@ body {
 }
 .page-dark {
   background-color: #671111;
-}
-
-.wrapper {
-  max-width: 1110px;
-  margin: 0 auto;
 }
 
 .title-h2 {
