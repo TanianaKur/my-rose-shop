@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My rose shop(basket)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+
+    <link rel="stylesheet" href="../css/footer-style.css" />
+    <link rel="stylesheet" href="../css/basket-style.css" />
+    <link rel="stylesheet" href="../css/header-style.css" />
+    <link rel="stylesheet" href="../css/shared-style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header"></div>
+    <div class="page page-dark">
+      <div class="wrapper">
+        <h1 class="basket-title">Корзина</h1>
+        <p class="basket-discription">
+          <span class="green">главная</span>
+          <img class="arrow" src="../img/icons8-направо-48.png" alt="arrow" />
+          <span class="white">корзина</span>
+        </p>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="title-tab">
+        <p class="title-product">товар</p>
+        <p class="price">цена за единицу</p>
+        <p class="amount">количество</p>
+        <p class="total">всего</p>
+      </div>
+
+      <hr />
+      <div class="product-basket">
+        <img class="product-basket-img" src="../img/amber queen.jpg" alt="" />
+        <p class="product-basket-title">Amber queen</p>
+        <p class="product-basket-price">1500</p>
+        <p class="minus">-</p>
+        <div class="frame">2</div>
+        <p class="plus">+</p>
+        <p class="sum">3000</p>
+
+        <div class="urn"></div>
+      </div>
+      <hr />
+      <div class="product-basket">
+        <img
+          class="product-basket-img"
+          src="../img/22695 black baccara.jpg"
+          alt=""
+        />
+        <p class="product-basket-title">Black baccara</p>
+        <p class="product-basket-price">2000</p>
+        <p class="minus">-</p>
+        <div class="frame">1</div>
+        <p class="plus">+</p>
+        <p class="sum">2000</p>
+        <div class="urn"></div>
+      </div>
+      <hr />
+      <div class="product-basket">
+        <img class="product-basket-img" src="../img/cherry girl.jpg" alt="" />
+        <p class="product-basket-title">Cherry girl</p>
+        <p class="product-basket-price">2000</p>
+        <p class="minus">-</p>
+        <div class="frame">1</div>
+        <p class="plus">+</p>
+        <p class="sum">2000</p>
+        <div class="urn"></div>
+      </div>
+      <hr />
+      <div class="sum-basket">
+        <p class="total-sum-order">Общая сумма заказа</p>
+        <p class="order-sum">7000</p>
+        <div class="empty-trash">очистить корзину</div>
+        <div class="checkout">оформить заказ</div>
+      </div>
+    </div>
+    <div id="footer"></div>
+    <script src="../shared/script.js"></script>
+  </body>
+</html>

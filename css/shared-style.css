@@ -1,8 +1,25 @@
 body {
   font-family: "Montserrat", sans-serif;
+  background-color: #f9f6f1;
 }
 
 .wrapper {
   max-width: 1110px;
   margin: 0 auto;
+}
+.page {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+@media (max-width: 576px) {
+  .page {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
+.page-light {
+  background-color: #f9f6f1;
+}
+.page-dark {
+  background-color: #671111;
 }

@@ -1,7 +1,25 @@
+@import "variables";
+@import "toggle";
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif, Inter;
+  background-color: $light;
 }
 .wrapper {
   max-width: 1110px;
   margin: 0 auto;
+}
+
+.page {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  @include breakpoint(sm) {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  &-light {
+    background-color: $light;
+  }
+  &-dark {
+    background-color: $dark;
+  }
 }
