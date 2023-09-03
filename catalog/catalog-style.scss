@@ -1,0 +1,136 @@
+.title-catalog {
+  margin-left: 30%;
+  padding-top: 20px;
+  display: inline-block;
+  max-width: 300px;
+  max-height: 50px;
+  background-color: #671111;
+  text-align: center;
+  color: #fff;
+  font-size: 28px;
+}
+span {
+  color: #671111;
+  padding-left: 22px;
+}
+// .span-1 {
+//   padding-left: 114px;
+// }
+// .span-2 {
+//   padding-left: 68px;
+// }
+.category-catalog {
+  font-size: 24px;
+  margin-left: 22px;
+  font-size: 20px;
+}
+.title-catalog {
+  margin-left: 22px;
+  padding-top: 20px;
+  display: block;
+  width: 300px;
+  height: 50px;
+  background-color: #671111;
+  text-align: center;
+  color: #fff;
+  font-size: 28px;
+}
+span {
+  color: #671111;
+  padding-left: 29px;
+}
+/* .span-1 { */
+/* padding-left: 114px; */
+/* } */
+/* .span-2 { */
+/* padding-left: 69px; */
+/* } */
+.category-catalog {
+  display: inline-block;
+  position: relative;
+  font-size: 24px;
+  margin-left: 152px;
+  font-size: 20px;
+}
+.wraper {
+  margin-left: 10px;
+}
+.catalog-product {
+  max-width: 447px;
+  max-height: 447px;
+  display: inline-block;
+  position: relative;
+  margin: 10px;
+  border: solid 2px #671111;
+  padding: 30px;
+}
+.img-catalog {
+  max-width: 320px;
+  max-height: 223px;
+  text-align: center;
+}
+.name-product {
+  text-align: center;
+  font-size: 20px;
+}
+.product-minus {
+  font-size: 20px;
+
+  display: inline-block;
+  position: relative;
+
+  left: 10%;
+}
+.amount-product {
+  display: inline-block;
+  position: relative;
+
+  left: 17%;
+  width: 100px;
+  height: 20px;
+  border: solid 2px #635d5d;
+  text-align: center;
+}
+.product-plus {
+  font-size: 20px;
+  display: inline-block;
+  position: relative;
+  left: 20%;
+}
+.price-product {
+  font-size: 20px;
+
+  display: inline-block;
+  position: relative;
+  top: 40px;
+  right: 25%;
+  &-old {
+    text-decoration: line-through;
+    font-size: 20px;
+
+    display: inline-block;
+    position: relative;
+    top: 40px;
+    right: 24%;
+  }
+}
+.sale-product {
+  font-size: 20px;
+  color: #f90f1d;
+  display: inline-block;
+  position: relative;
+  top: 40px;
+  right: 22%;
+}
+.basket-catalog {
+  display: inline-block;
+  position: relative;
+  width: 130px;
+  height: 40px;
+  background-color: #671111;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 10px;
+  padding-top: 16px;
+}

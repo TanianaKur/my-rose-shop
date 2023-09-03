@@ -1,6 +1,9 @@
+@import "variables";
+@import "toggle";
+
 .basket-title {
   font-family: Inter;
-  font-size: 40px;
+  font-size: calc(20px + (40-20) * ((100vw - 320px) / (1200-320)));
   font-style: Extra light;
   text-align: center;
   margin-top: 40px;
@@ -11,7 +14,7 @@
 }
 .basket-discription {
   font-family: Inter;
-  font-size: 32px;
+  font-size: calc(16px + (40-16) * ((100vw - 320px) / (1200-320)));
   font-style: regular;
   text-align: center;
   padding-top: 33px;
@@ -55,6 +58,10 @@
 .product-basket-img {
   width: 214px;
   height: 128px;
+  @include breakpoint(lg) {
+    min-width: 200px;
+    margin: 50px auto 20px;
+  }
 }
 .product-basket-title {
   display: inline;
@@ -63,6 +70,10 @@
   color: #1c592d;
   padding-top: 20px;
   position: absolute;
+  @include breakpoint(lg) {
+    min-width: 200px;
+    margin: 50px auto 20px;
+  }
 }
 .product-basket-price {
   display: inline;
@@ -70,6 +81,10 @@
   position: absolute;
   margin-left: 250px;
   padding-top: 24px;
+  @include breakpoint(lg) {
+    min-width: 200px;
+    margin: 50px auto 20px;
+  }
 }
 .urn {
   width: 48px;
@@ -79,6 +94,10 @@
   background-image: url(../img/icons8-мусор-48.png);
   margin-left: 830px;
   margin-top: 35px;
+  @include breakpoint(lg) {
+    min-width: 200px;
+    margin: 50px auto 20px;
+  }
 }
 .minus {
   display: inline;
